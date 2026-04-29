@@ -158,11 +158,34 @@ nav ul a:hover {
   margin-bottom: 1.5rem;
 }
 
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.about-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+
 .about-text {
   font-size: 1.05rem;
   color: var(--grey);
   max-width: 580px;
   line-height: 1.8;
+}
+
+@media (max-width: 480px) {
+  .about-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* APPS */
