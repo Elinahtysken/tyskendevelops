@@ -469,7 +469,7 @@ footer {
   color: var(--white);
 }
 
-/* FOOTER PRIVACY LINK */
+/* FOOTER */
 footer {
   display: flex;
   justify-content: center;
@@ -478,19 +478,65 @@ footer {
 }
 
 .privacy-link {
-  background: none;
-  border: none;
   color: var(--muted);
   font-size: 0.8rem;
-  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 3px;
-  font-family: inherit;
   transition: color 0.2s;
 }
 
 .privacy-link:hover {
   color: var(--light);
+}
+
+/* PRIVACY PAGE */
+.privacy-page {
+  padding: 10rem 0 7rem;
+  min-height: 100vh;
+}
+
+.privacy-page h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 3rem;
+}
+
+.privacy-page h2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-page p,
+.privacy-page li {
+  font-size: 0.95rem;
+  color: var(--grey);
+  line-height: 1.8;
+}
+
+.privacy-page ul {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.privacy-page a {
+  color: var(--light);
+  text-underline-offset: 3px;
 }
 
 /* RESPONSIVE */
